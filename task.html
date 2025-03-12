@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>URL Shortener</title>
+  <link rel="stylesheet" href="task.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+      <header>
+        <h1>URL Shortener</h1>
+        <p>Shorten your long URLs with just one click</p>
+      </header>
+      
+      <main>
+        <div class="url-form">
+          <form id="shortenForm">
+            <input 
+              type="url" 
+              id="longUrl" 
+              placeholder="Enter a long URL" 
+              required
+            >
+            <button type="submit">Shorten URL</button>
+          </form>
+        </div>
+        
+        <div class="result" id="result">
+          <!-- Results will appear here -->
+        </div>
+        
+        <div class="error" id="error">
+          <!-- Errors will appear here -->
+        </div>
+      </main>
+      
+      <footer>
+        <p>URL Shortener Service &copy; 2025</p>
+      </footer>
+    </div>
+
+  <script src="node.js"></script>
+</body>
+</html>
