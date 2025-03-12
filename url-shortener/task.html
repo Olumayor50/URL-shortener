@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Shortener</title>
+    <link rel="stylesheet" href="task.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>URL Shortener</h1>
+            <p>Shorten your long URLs with just one click!</p>
+        </header>
+        
+        <main>
+            <div class="input-section">
+                <input type="url" id="original-url" placeholder="Enter your long URL here" required>
+                <button id="shorten-btn">Shorten URL</button>
+            </div>
+            
+            <div class="result-section" id="result-section">
+                <div class="result-container hidden" id="result-container">
+                    <h3>Your Shortened URL:</h3>
+                    <div class="shortened-url-container">
+                        <a id="shortened-url" target="_blank"></a>
+                        <button id="copy-btn">Copy</button>
+                    </div>
+                    <p id="copy-message" class="copy-message hidden">Copied to clipboard!</p>
+                </div>
+            </div>
+            
+            <div class="history-section">
+                <h3>Recent URLs</h3>
+                <div id="history-list" class="history-list">
+                    <p id="no-history-message">No URLs shortened yet</p>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>© 2025 URL Shortener Service</p>
+        </footer>
+    </div>
+    
+    <script src="node.js"></script>
+</body>
+</html>
+
